@@ -11,4 +11,4 @@ los encargados de cada centro de trabajo._
 
 **Entidades por implementar:** Roles, WorkCenters y Assists._  
 **Roles:** La entidad Roles nos servira para determinar el tipo de usuario dentro de la plataforma. Tendrá los siguientes atributos: ID, name, description, permissions, status._
-![Texto alternativo](@/src/assets/md/tabla_roles.png)
+![Texto alternativo](https://github.com/JennerB-95/front-prueba/blob/main/src/assets/md/tabla_roles.png)
