@@ -118,8 +118,11 @@ const submit = handleSubmit(async (values) => {
     router.push("/department-list");
     return response.data;
   } catch (error) {
-    console.error("Error al enviar la solicitud:", error);
-    Swal.fire("Error", "Hubo un problema al crear el registro", "error");
+    if (error.request.response) {
+      Swal.fire("Error", "El registro con este codigo ya existe", "error");
+    } else {
+      Swal.fire("Error", "Hubo un problema al crear el registro", "error");
+    }
   }
 });
 

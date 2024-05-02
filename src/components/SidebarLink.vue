@@ -68,7 +68,7 @@ const router = useRouter();
 const showAppBar = ref(true);
 
 const logout = async () => {
-  localStorage.removeItem("isLogged");
+  localStorage.removeItem("token");
   router.push({ name: "Login" });
 };
 

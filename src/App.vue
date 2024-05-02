@@ -1,12 +1,32 @@
 <template>
   <v-app>
     <SidebarLink></SidebarLink>
-    <router-view> </router-view>
+    <router-view v-if="!showAppBar"> </router-view>
   </v-app>
 </template>
 
 <script setup>
+import { useRouter } from "vue-router";
+import { ref, watch } from "vue";
 import SidebarLink from "./components/SidebarLink.vue";
+
+const router = useRouter();
+const showAppBar = ref(true);
+
+const excludedRoutes = ["/", "/login"];
+
+const shouldShowAppBar = () => {
+  return !excludedRoutes.includes(router.currentRoute.value.path);
+};
+
+watch(
+  () => router.currentRoute.value.path,
+  () => {
+    showAppBar.value = shouldShowAppBar();
+  }
+);
+
+showAppBar.value = shouldShowAppBar();
 </script>
 <style lang="scss">
 :root {
