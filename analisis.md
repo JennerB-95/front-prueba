@@ -10,7 +10,7 @@ los encargados de cada centro de trabajo._
 ### Diseño de la base de datos
 
 **Entidades por implementar:** Roles, WorkCenters y Assists._  
-**Roles:** \_La entidad Roles nos servira para determinar el tipo de usuario dentro de la plataforma. Tendrá los siguientes atributos: ID, name, description, permissions, status._
+**Roles:** \_La entidad Roles nos servira para determinar el tipo de usuario dentro de la plataforma. Tendrá los siguientes atributos: ID, name, description, permissions, status._  
 ![Texto alternativo](https://github.com/JennerB-95/front-prueba/blob/main/src/assets/md/tabla_roles.png)  
 **WorkCenters:** _La entidad WorkCenters nos servira para determinar la ubicación del equipo, ya sea que se manejen diferentes sucursales. Tendrá los siguientes atributos: ID, name, location, employee (manager)._  
 ![Texto alternativo](https://github.com/JennerB-95/front-prueba/blob/main/src/assets/md/tabla_work.png)  
@@ -58,15 +58,15 @@ Limitar el acceso a la información de asistencia solo a los usuarios autorizado
 
 ### Pantalla de Roles
 
-_Usuario encargado del sistema podrá gestionar información sobre roles (CRUD)_
-![Texto alternativo](https://github.com/JennerB-95/front-prueba/blob/main/src/assets/md/cap_1.jpg)
+_Usuario encargado del sistema podrá gestionar información sobre roles (CRUD)_  
+![Texto alternativo](https://github.com/JennerB-95/front-prueba/blob/main/src/assets/md/cap_1.png)
 
 ### Pantalla de WorkCenters
 
-_Usuario encargado del sistema podrá gestionar información sobre centros de trabajo (CRUD)_
-![Texto alternativo](https://github.com/JennerB-95/front-prueba/blob/main/src/assets/md/cap_2.jpg)
+_Usuario encargado del sistema podrá gestionar información sobre centros de trabajo (CRUD)_  
+![Texto alternativo](https://github.com/JennerB-95/front-prueba/blob/main/src/assets/md/cap_2.png)
 
 ### Pantalla de Assists
 
-_Usuario encargado del sistema podrá gestionar información sobre asistencias (CRUD)_
-![Texto alternativo](https://github.com/JennerB-95/front-prueba/blob/main/src/assets/md/cap_3.jpg)
+_Usuario encargado del sistema podrá gestionar información sobre asistencias (CRUD)_  
+![Texto alternativo](https://github.com/JennerB-95/front-prueba/blob/main/src/assets/md/cap_3.png)
